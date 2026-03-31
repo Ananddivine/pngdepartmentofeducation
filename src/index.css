@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    background-color: #ffebf5;
+    border: 1px solid #ffb7b7;
+}
+
+@media print {
+    /* Hide navbar, footer, and any unwanted UI components */
+    .navbar, .footer {
+      display: none !important;
+    }
+  
+    /* Optionally hide body margins for better PDF layout */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Ensure the invoice takes full width */
+    .invoice-container {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  
+  @layer utilities {
+  .animate-fade {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+
+@keyframes pulseGreen {
+  0% { background-color: #10b981; }
+  50% { background-color: #059669; }
+  100% { background-color: #10b981; }
+}
+.animate-upload {
+  animation: pulseGreen 1s infinite;
+}
+
+
+
+@keyframes christmasGlow {
+  0% { border-color: red; box-shadow: 0 0 10px red; }
+  25% { border-color: green; box-shadow: 0 0 10px green; }
+  50% { border-color: gold; box-shadow: 0 0 10px gold; }
+  75% { border-color: blue; box-shadow: 0 0 10px blue; }
+  100% { border-color: red; box-shadow: 0 0 10px red; }
+}
+
+.animate-christmas-lights {
+  animation: christmasGlow 4s infinite;
+}
+
+
+html.light {
+  @apply scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200;
+  cursor: url("/cursors/cursor-light.cur"), auto;
+}
+
+html.dark {
+  @apply scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-800;
+  cursor: url("/cursors/cursor-dark.cur"), auto;
+}
+
+html.colorful {
+  @apply scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-purple-300;
+  cursor: url("/cursors/cursor-color.cur"), auto;
+}
+
+svg {
+  cursor: inherit !important;
+}

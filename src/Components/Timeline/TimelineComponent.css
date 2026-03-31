@@ -1,0 +1,358 @@
+ 
+/*-------TIMELINE---------*/
+#time-line{
+    margin-left: -400px;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+   background: #0e1015;
+    
+  }
+
+  @media screen and (max-width: 1220px) {
+    #time-line{
+      margin-left: 10px;
+    }
+  }
+
+ 
+  h1{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .continers{
+    padding: 2rem;
+    padding-bottom: 10px;
+    margin:  0 auto;
+    max-width: 800px;
+    margin-bottom: 10px;
+  
+  }
+ 
+  .timelines{
+    position: relative;
+    min-height: 150px;
+
+
+  
+  }
+  .lines{
+    position: absolute;
+    left: calc(0% - 1px);
+    width: 3px;
+    top: -10px;
+    bottom: 0px;
+    background: linear-gradient(to bottom,Green,rgb(255, 69, 193),#00fffb,#fff);
+    display: block;
+    transition: 1s; 
+    
+   }
+  
+  .lines:before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    box-sizing: border-box; 
+    border-radius: 50%;
+    background-color: #0e1015;
+    border: 2px solid #ffff;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 0px 30px 5px #04ff00c1; 
+  }
+  .lines::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    box-sizing: border-box;
+ 
+    border-radius: 50%;
+    background-color: #0e1015;
+    border: 2px solid #ffff;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 0px 30px 5px #00e1ffc1; 
+  }
+  /* .lines::after{
+    bottom: 0px;
+    
+  
+  } */
+  .sections{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 300px;
+    transition: 0.9s ease-in-out;
+        
+  }
+ 
+  .bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+
+    border-radius: 50%;
+    box-shadow: 1px 0px 40px 13px  #ff7dc2c5;
+    background-color: #0e1015;
+    border: 2px solid #ffff;
+    left: 0%;
+    top: -17%;
+    transform: translateX(-50%);
+  
+  }
+  .contents{
+    width: calc(50%-2rem);
+  
+  }
+  .show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+  }
+ .content h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: green;
+  }
+  .content  p{
+    font-size: 20px;
+  }
+  .divine h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+    line-height: 1.6;
+
+  }
+  .contents h3{
+    color: rgba(255, 4, 222, 0.819);
+    font-size: 15px;
+  }
+  .contents p{
+    font-size: 15px;
+  }
+  
+  .top-section h1{
+  text-align: center;
+  align-items: center;
+  font-size: 22px;
+  }
+  
+
+
+.pfor p{
+  font-size: 18px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 20px 4px #60be54;
+  color: #1efe00;
+  background: #9aff8d68;
+  border: 1px solid #80ff7d;
+}
+.pfor {
+ margin-bottom: 5px;
+}
+
+
+.sections h2{
+  font-size: 28px;
+}
+
+  /* ----------------------------------mediaScreen Size------------------------------- */
+
+
+
+
+.buttons {
+        display: inline-block;
+        border: 1px solid #1efe00;
+        border-radius: 8px;
+        padding: 5px 10px; 
+        cursor: context-menu;
+        color: green;
+}
+.buttons:hover{
+  border: 1px solid #020202;
+box-shadow: 1px 2px 20px 7px #a9c1ff;
+cursor: pointer;
+background: #2f333f;
+color: #fff;
+}
+
+
+.processor img{
+  margin: 10px 200px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #cccc;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+    box-shadow:
+    -30px -5px 30px rgba(205, 133, 63, 0.5),   /* top-left: wood color */
+    30px 5px 50px rgba(255, 255, 255, 0.6),       /* right: bright white */
+    0 30px 70px rgba(50, 50, 50, 0.4);          /* bottom: dark shadow */
+}
+.processor img:hover{
+  transform: scale(1.1);
+}
+
+.chip img {
+  margin-left: 80%;
+  width: 70%;
+  height: 70%;
+  box-sizing: border-box;
+  border: 1px solid #cccc;
+  border-radius: 20px;
+  box-shadow:
+    0 0 30px rgba(255, 200, 70, 0.5),
+    0 0 60px rgba(255, 200, 70, 0.4),
+    0 0 90px rgba(255, 200, 70, 0.3),
+    0 0 120px rgba(255, 200, 70, 0.2);
+}
+
+@media(max-width: 620px) {
+  .processor img {
+    display: block;
+    margin: 20px 140px;
+  }
+  .chip img {
+    margin-left: 60%;
+    width: 50%;
+    height: 50%;
+    display: block;
+  }
+}
+
+@media(max-width: 1020px){
+  .chip img{
+    margin-left: 50%;
+  }
+}
+@media(max-width: 800px){
+  .chip img{
+    margin-left: 60%;
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #cccc;
+    border-radius: 20px;
+    /* Adjust the box shadow properties */
+    box-shadow: -79px 97px 284px -11px rgba(70, 206, 255, 0.212),
+                -79px 97px 284px -11px rgba(203, 70, 255, 0.349),
+                -79px 97px 284px -11px rgba(203, 70, 255, 0.242);
+  }
+
+  .time-line h1{
+    font-size: 15px;
+    font-weight: 500;
+  margin-left: 10px;
+    text-align: center;
+  }
+  .sections h2{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .sections p{
+    font-size: 10px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  .divine h3{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+ .contents h3, h4{
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+  .top-section h1{
+    font-size: 17px;
+    font-weight: 600;
+
+  }
+}
+
+@media(max-width: 500px){
+  .chip img{
+    margin-left: 50%;
+    width: 70%;
+    box-sizing: border-box;
+    border: 1px solid #cccc;
+    border-radius: 20px;
+
+
+  }
+  .processor img{
+    width: 70%;
+    margin-left: 50%;
+  }
+
+  .time-line h1{
+    font-size: 10px;
+    font-weight: 500;
+  margin-left: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .sections h2{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+
+  }
+  .sections p{
+    font-size: 8px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  .divine h3{
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+ .contents h3, h4{
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.top-section h1{
+  font-size: 12px;
+  font-weight: 500;
+}
+.top-section p{
+  font-size: 9px;
+  font-weight: 400;
+}
+.top-section i{
+  font-size: 15px;
+
+}
+.contents i{
+  font-size: 15px;
+}
+.sections i{
+  font-size: 15px;
+}
+.sections img{
+ height: 200px;
+}
+
+}
