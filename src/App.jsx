@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import HomePage from "./Components/HomePage/HomePage";
+import HomePage from "./Components/HomePage/Homepage";
 import AboutPage from "./Components/AboutPage/AboutPage";
 import ContactPage from "./Components/ContactPage/ContactPage";
 
