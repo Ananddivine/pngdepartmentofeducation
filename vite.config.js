@@ -1,17 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+import path from "path";
+
 
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ["jwt-decode", "jspdf"]
+    include: ["jwt-decode", 'jspdf',]
   },
   assetsInclude: ['**/*.cur'],
-  resolve: {
+   resolve: {
     extensions: ['.js', '.jsx', '.json'],
-    alias: {
+     alias: {
       "@": path.resolve(__dirname, "src"),
     },
-  },
-});
+  }
+})
