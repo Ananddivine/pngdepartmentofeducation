@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fireworks-js/react": "^2.10.8",
@@ -34,7 +34,6 @@
     "globe.gl": "^2.45.0",
     "html-to-image": "^1.11.13",
     "html2canvas": "^1.4.1",
-    "install": "^0.13.0",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.2",
     "jszip": "^3.10.1",
@@ -49,7 +48,7 @@
     "react-icons": "^5.4.0",
     "react-pdf": "^10.0.1",
     "react-router-dom": "^6.26.2",
-    "react-simple-maps": "^1.0.0",
+    "react-simple-maps": "^2.3.0",
     "react-snowfall": "^2.3.0",
     "react-spinners": "^0.15.0",
     "react-to-print": "^2.14.15",
@@ -69,7 +68,7 @@
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
