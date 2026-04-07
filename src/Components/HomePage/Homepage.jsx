@@ -92,7 +92,7 @@ export default function HomePage() {
   {/* Dropdown */}
   {programOpen && (
     <div className="absolute left-0 w-48 bg-white rounded-lg shadow-lg transition-all duration-300 z-50">
-      <a href="https://pngnsoestem.com" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Student Management</a>
+      <a href="https://pngnsoestem.com" className="block px-4 py-2 text-gray-700 hover:bg-green-100">School Management System</a>
       <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Teacher Training</a>
       <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Scholarships</a>
       <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-green-100">Digital Learning</a>
